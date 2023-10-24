@@ -1,0 +1,12 @@
+package chap11_abstraction.tc;
+
+public abstract class Tv {
+	public int lastChannel;
+
+	public abstract void powerOn();
+	public abstract void powerOff();
+	public abstract void Operator(int channel);
+	public abstract void moveTo(int channel);
+	public abstract void channelUp();
+	public abstract void channelDown();
+}

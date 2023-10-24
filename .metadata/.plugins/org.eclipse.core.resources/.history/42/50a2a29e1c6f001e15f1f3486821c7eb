@@ -1,0 +1,8 @@
+package chap12_interface.device;
+
+public class Display {
+	void show() {
+		System.out.println("보여지다.");
+	}
+
+}

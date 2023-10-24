@@ -1,0 +1,21 @@
+package chap99_homework.hw231019;
+
+import chap99_homework.hw231019.mammal.Lion;
+import chap99_homework.hw231019.mammal.Tiger;
+
+public class UseOfManmmal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+//		race = 
+		
+		Lion lion;
+		lion = new Lion();
+		
+		Tiger tiger = new Tiger();
+		
+
+	}
+
+}

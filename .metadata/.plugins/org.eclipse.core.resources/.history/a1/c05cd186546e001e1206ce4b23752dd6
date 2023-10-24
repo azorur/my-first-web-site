@@ -1,0 +1,29 @@
+package chap11_abstraction;
+
+import chap11_abstraction.tv.LgTv;
+import chap11_abstraction.tv.SamsungTv;
+import chap11_abstraction.tv.Tv;
+
+public class _02_UseTv {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Tv tv = new SamsungTv();
+		
+		tv.powerOn();
+		tv.powerOff();
+		tv.Operate(1);
+		tv.moveTo(7);
+		tv.channelUp();
+		tv.channelDown();
+		
+//		tv = new LgTv();
+//		tv.powerOn();
+//		tv.powerOff();
+//		tv.Operate(1);
+//		tv.moveTo(3);
+//		tv.channelUp();
+//		tv.channelDown();
+	}
+}

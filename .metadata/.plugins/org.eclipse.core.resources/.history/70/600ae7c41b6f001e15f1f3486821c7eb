@@ -1,0 +1,7 @@
+package chap12_interface.multiinherit;
+
+public class father {
+	public void repair() {
+		System.out.println("잘고치신다.");
+	}
+}

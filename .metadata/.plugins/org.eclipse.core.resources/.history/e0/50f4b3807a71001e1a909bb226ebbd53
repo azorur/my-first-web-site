@@ -1,0 +1,24 @@
+package chap14_objectarray.objectarray;
+
+public class ClassArray {
+	private String subject;
+	private int studentCnt;
+	private int lectureTime;
+	
+	public ClassArray() {
+		
+	}
+	
+	public ClassArray(String subject, int studentCnt, int lectureTime) {
+		this.subject = subject;
+		this.studentCnt = studentCnt;
+		this.lectureTime = lectureTime;
+	}
+	
+	public void proceedLectire() {
+		System.out.println(
+				this.getSubject() + " 수업을 " +
+				this.getStudentCnt()+ "명이 듣습니다. 수업시간은" +
+				this.getLectureTime()  + "분 입니다.");
+	}
+}

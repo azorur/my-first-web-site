@@ -1,0 +1,19 @@
+package chap12_interface.multiinherit;
+
+public class Child2 implements Mother2, Father2 {
+
+	@Override
+	public void repair() {
+		System.out.println("잘 고치신다.");
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void calm() {
+		System.out.println("차분하시다.");
+		// TODO Auto-generated method stub
+
+	}
+
+}

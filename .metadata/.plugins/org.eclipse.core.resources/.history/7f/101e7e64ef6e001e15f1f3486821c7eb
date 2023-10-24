@@ -1,0 +1,194 @@
+package chap99_homework.hw231019;
+
+import java.util.Scanner;
+
+import chap99_homework.hw231019.employee.ContractEmployee;
+import chap99_homework.hw231019.employee.Employee;
+import chap99_homework.hw231019.employee.RegularEmployee;
+import chap99_homework.hw231019.employee.TempEmployee;
+
+public class UseOfEmployee {
+	
+	public static void main(String[] args) {
+		//{new RegularEmploayee()
+		//empArr[0].showE
+		Employee[] empArr = new Employee[100];
+		
+		Scanner sc = new Scanner(System.in);
+		
+
+		
+		int eno = 0;
+		String name = ";";
+		int pay = 0;
+		int bouns =0;
+		int hireYear = 0;
+		int workDay = 0;
+		int type = 0;
+		
+		int index = 0;
+		int search = 0;
+		
+		
+//		eno, name, pay, type
+//		int eno, String name, int pay, int type, int workDay
+//		int eno, String name, int pay, int type, int workDay
+//		Employee Ce = new ContractEmployee(eno, name, pay, type);
+//		Employee Te = new TempEmployee(eno, name, pay, type);
+//		Employee Re = new RegularEmployee(eno, name, pay, type); 
+		
+		while(true) {
+			System.out.println("***메뉴***");
+			System.out.println("1. 정규직 저장");
+			System.out.println("2. 임시직 저장");
+			System.out.println("3. 계약직 저장");
+			System.out.println("4. 전체 정보 출력");
+			System.out.println("5. 월급 계산 출력");
+			System.out.println("6. 프로그램 종료");
+			
+			String userInput = sc.nextLine();
+			
+			if(userInput.equals("1")) {
+
+				System.out.println("사번을 입력하세요.");
+				eno = sc.nextInt();
+				
+				System.out.println("이름을 입력하세요");
+				name = sc.nextLine();
+				
+				System.out.println("급여를 입력하세요");
+				pay = sc.nextInt();
+				
+				System.out.println("보너스를 입력하세요");
+				bouns = sc.nextInt();
+				
+				empArr[index++] = new RegularEmployee(eno,name,pay,type,bouns);
+				
+				
+				} else if(userInput.equals("2")) {
+
+					System.out.println("사번을 입력하세요.");
+					eno = sc.nextInt();
+					
+					System.out.println("이름을 입력하세요");
+					name = sc.nextLine();
+					
+					System.out.println("급여를 입력하세요");
+					pay = sc.nextInt();
+					
+					System.out.println("근무년수를 입력하세요");
+					hireYear = sc.nextInt();
+					
+					empArr[index++] = new ContractEmployee(eno,name,pay,type,hireYear);
+					
+					
+				} else if(userInput.equals("3")) {
+
+					System.out.println("사번을 입력하세요.");
+					eno = sc.nextInt();
+					
+					System.out.println("이름을 입력하세요");
+					name = sc.nextLine();
+					
+					System.out.println("급여를 입력하세요");
+					pay = sc.nextInt();
+					
+					System.out.println("근무일수를 입력하세요");
+					workDay = sc.nextInt();
+					
+					empArr[index++] = new TempEmployee(eno,name,pay,type,workDay);
+					
+					
+				} else if(userInput.equals("4")) {
+					
+					
+
+					System.out.println("검색할 사원의 사번을 입력하세요.");
+					workDay = sc.nextInt();
+					
+					empArr[search].showEmployeeInfo();
+					
+
+				} else if(userInput.equals("5")) {
+					
+				} else if(userInput.equals("6")) {
+					System.out.println("프로그램을 종료합니다.");
+					sc.close();
+					break;
+					
+				} else {
+					System.out.println("잘못 입력하였습니다.");
+				}
+			
+				
+				
+				
+				
+				
+		}
+		
+		/*
+		*** 메뉴 선택***
+		1. 정규직 저장
+		2. 임시직 저장
+		3. 계약직 저장
+		4. 전체 정보 출력
+		5. 월급 계산 출력
+		6. 프로그램 종료
+		
+		1. 선택 시
+		사번을 입력해주세요.
+		1. 이름을 입력하세요.
+		홍길동
+		급여를 입력하세요.
+		3000
+		보너스를 입력하세요.
+		입렵한 내용을 empArr에 저장
+		
+		2. 선택 시
+		사번을 입력해주세요.
+		1. 이름을 입력하세요.
+		임꺽정
+		급여를 입력하세요.
+		2800
+		근무년수를 입력하세요
+		7
+		입렵한 내용을 empArr에 저장
+		
+		3. 선택 시
+		사번을 입력해주세요.
+		1. 이름을 입력하세요.
+		홍길동
+		급여를 입력하세요.
+		250
+		근무일수를 입력하세요.
+		20
+		입렵한 내용을 empArr에 저장
+		
+		4. 선택 시
+		empArr에 저장된 내용 모두 출력
+		showEmployeeInfo()사용해서 출력
+		
+		5. 선택 시
+		검색할 사원의 사번을 입력하세요
+		1
+		1번 사원의 정보를 showEmployeeInfo() 사용해서 출력 
+		
+		6. 선택 시
+		프로그램을 종료합니다.
+		다른 번호가 입력되면
+		잘못 입력하였습니다.
+		다시 메뉴 표출
+		 */
+	
+	
+			
+			
+	
+		
+		
+				
+		
+	}
+
+}

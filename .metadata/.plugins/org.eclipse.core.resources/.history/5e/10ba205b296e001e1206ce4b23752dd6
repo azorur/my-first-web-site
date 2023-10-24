@@ -1,0 +1,23 @@
+package chap09_inherit.calc;
+
+//Calculator를 상속받은 Add, Sub, Mul, Div 클래스를 만들고 overriding된 mathod calculate()를 구현하세요
+
+public class Calculator {
+	
+	int a;
+	int b;
+	
+	public Calculator() {
+		
+	}
+	
+	public Calculator(int a, int b) {
+		this.a = a;
+		this.b = b;
+		
+	}
+	
+	public int calculate() {
+		return 0;
+	}
+}
